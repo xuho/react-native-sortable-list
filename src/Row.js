@@ -59,7 +59,7 @@ export default class Row extends Component {
       // Returns whether this component should block native components from becoming the JS
       // responder. Returns true by default. Is currently only supported on android.
       // NOTE: Returning false here allows us to scroll unless it's a long press on a row.
-      return false;
+      return true;
     },
 
     onPanResponderGrant: (e, gestureState) => {
